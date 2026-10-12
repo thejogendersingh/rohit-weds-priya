@@ -11,6 +11,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600;1,700&family=Great+Vibes&family=Marcellus&family=Montserrat:wght@400;500;600;700&family=Rozha+One&display=swap" rel="stylesheet">
   
+  <!-- Preload Critical Above-The-Fold Images for Superfast Load -->
+  <link rel="preload" as="image" href="assets/intro-envolp.webp" type="image/webp" fetchpriority="high">
+  <link rel="preload" as="image" href="assets/hero.webp" type="image/webp" fetchpriority="high">
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -67,7 +71,7 @@
         <div class="envelope-wrapper" id="envelopeWrapper" role="button" tabindex="0" aria-label="Tap to open wedding invitation">
           <div class="envelope-glow"></div>
           <div class="envelope-card">
-            <img src="assets/intro-envolp.png" alt="Wedding Invitation Envelope" class="envelope-img" id="envelopeImg" draggable="false">
+            <img src="assets/intro-envolp.webp" alt="Wedding Invitation Envelope" class="envelope-img" id="envelopeImg" draggable="false" fetchpriority="high" decoding="async">
           </div>
         </div>
 
@@ -101,7 +105,7 @@
       <div class="particles-layer" id="particlesLayer" aria-hidden="true"></div>
 
       <!-- Background Music Audio (Carnatic Instrumental Serenity from YouTube - Starting 10s trimmed) -->
-      <audio id="bgMusic" src="assets/bg-music.mp3?v=trimmed10s" preload="auto" loop playsinline></audio>
+      <audio id="bgMusic" src="assets/bg-music.mp3?v=trimmed10s" preload="none" loop playsinline></audio>
     </section>
 
     <!-- ================= HERO & DETAILS SECTION ================= -->
@@ -129,7 +133,7 @@
         
         <!-- Hero Invitation Card (Full Mobile Screen) -->
         <div class="hero-image-wrapper" id="heroWrapper">
-          <img src="assets/hero.png" alt="Rohit & Priya Wedding Invitation Card" class="hero-img" id="heroImg" draggable="false">
+          <img src="assets/hero.webp" alt="Rohit & Priya Wedding Invitation Card" class="hero-img" id="heroImg" draggable="false" fetchpriority="high" decoding="async">
           
           <!-- Subtle scroll prompt at the bottom of hero card -->
           <div class="hero-scroll-prompt" id="heroScrollPrompt">
@@ -268,27 +272,27 @@
             
             <!-- Box 1: 1st July 2026 - Ganesh Pujan, Mata Pujan, Mandap -->
             <div class="event-card-item">
-              <img src="assets/box1.png" alt="Wedding Festivities - 1st July 2026" class="event-card-img" loading="lazy" draggable="false">
+              <img src="assets/box1.webp" alt="Wedding Festivities - 1st July 2026" class="event-card-img" loading="lazy" decoding="async" draggable="false">
             </div>
 
             <!-- Box 2: 2nd July 2026 - Haldi, Mehandi, Dinner -->
             <div class="event-card-item">
-              <img src="assets/box2.PNG" alt="Wedding Festivities - 2nd July 2026" class="event-card-img" loading="lazy" draggable="false">
+              <img src="assets/box2.webp" alt="Wedding Festivities - 2nd July 2026" class="event-card-img" loading="lazy" decoding="async" draggable="false">
             </div>
 
             <!-- Box 3: 3rd July 2026 - Tika Faldaan -->
             <div class="event-card-item">
-              <img src="assets/box3.PNG" alt="Tika Faldaan - 3rd July 2026" class="event-card-img" loading="lazy" draggable="false">
+              <img src="assets/box3.webp" alt="Tika Faldaan - 3rd July 2026" class="event-card-img" loading="lazy" decoding="async" draggable="false">
             </div>
 
             <!-- Box 4: 3rd July 2026 - Sangeet Night -->
             <div class="event-card-item">
-              <img src="assets/box4.PNG" alt="Sangeet Night - 3rd July 2026" class="event-card-img" loading="lazy" draggable="false">
+              <img src="assets/box4.webp" alt="Sangeet Night - 3rd July 2026" class="event-card-img" loading="lazy" decoding="async" draggable="false">
             </div>
 
             <!-- Box 5: 4th July 2026 - The Wedding -->
             <div class="event-card-item">
-              <img src="assets/box5.png" alt="The Wedding - 4th July 2026" class="event-card-img" loading="lazy" draggable="false">
+              <img src="assets/box5.webp" alt="The Wedding - 4th July 2026" class="event-card-img" loading="lazy" decoding="async" draggable="false">
             </div>
 
           </div>
